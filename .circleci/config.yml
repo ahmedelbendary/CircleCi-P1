@@ -49,6 +49,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - save-say-hello
-      - print-machine-info
+      - print-machine-info:
           requires:
             - save-say-hello
