@@ -32,7 +32,10 @@ jobs:
       - run:
           name: "What branch am I on now?"
           command: "echo $CIRCLE_BRANCH"          
-          
+      - run:
+          name: "What is global variable now?"
+          command: "echo $New_Name"   
+
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
