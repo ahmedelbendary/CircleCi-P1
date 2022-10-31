@@ -40,7 +40,7 @@ jobs:
           at: /tmp/workspace          
       - run:
           name: "What is global variable now?"
-          command: "cat /tmp/workspace/target/output.txt"   
+          command: "ls -lh /tmp/workspace/target/"   
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
