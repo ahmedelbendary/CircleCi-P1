@@ -47,5 +47,5 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello
+      - save-say-hello
       - print-machine-info
