@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World! > target/output.txt"
+          command: "mkdir target;echo Hello, World! > target/output.txt"
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
