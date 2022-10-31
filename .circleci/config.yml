@@ -50,3 +50,5 @@ workflows:
     jobs:
       - save-say-hello
       - print-machine-info
+          requires:
+            - save-say-hello
