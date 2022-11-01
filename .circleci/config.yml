@@ -39,7 +39,9 @@ jobs:
           command: "ls -lh ~/"
       - run: cat ~/output.txt 
       - print_pipeline_ids
-      - run: echo "test on fail"
+      - run: 
+            name: "test on_fail"
+            command: echo "test on fail"
             when: on_fail       
 workflows:
   say-hello-workflow:
