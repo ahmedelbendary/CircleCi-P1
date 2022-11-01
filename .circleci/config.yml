@@ -37,8 +37,8 @@ jobs:
       - run:
           name: "What is global variable now?"
           command: "ls -lh ~/"
-      - run: cat ~/output.txt 
-      - print_pipeline_ids
+      - run: cat ~/output.txto 
+      - print_pipeline_id
       - run: 
             name: "test on_fail"
             command: echo "test on fail"
